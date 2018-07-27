@@ -26,6 +26,18 @@ def calculate(s):
     >>> calculate(\'print("bad guy coming to hack")\')
     '''
     # TODO = fill in this function
+    check = 0
+    for i in range(0, len(s)):
+        check = 0
+        if (s[i] == '+' or s[i] == '-' or s[i] == '*' or s[i] == '/' or
+            s[i] == '(' or s[i] == '(' or s[i].isalpha() != True):
+            check = 1
+        if check == 0:
+            break
+    if check == 0:
+        return None
+    else:
+        return eval(s)
     pass
 
 if __name__ == '__main__':

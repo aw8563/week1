@@ -1,11 +1,8 @@
 strings = ['This', 'list', 'is', 'now', 'all', 'together']
 sentence = ''
-for i in range(0, 5):
+for i in strings:
+    sentence +=  i + ' '
 
-    sentence = sentence + strings[i] + ' ' 
-
-sentence += strings[5]
-
-print (sentence)
+print(sentence.rstrip())
 
 print(' '.join(strings))
