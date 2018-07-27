@@ -20,7 +20,24 @@ def produceFibsList(n):
     >>> produceFibsList(5)
     [1, 1, 2, 3, 5]
     '''
-    # TODO = fill in the code here, and return the correct result using the return keyword
+    numbersList = [1 , 1]
+    num = 1
+    k = 0
+
+    if (n == 0):
+        numbersList = []    
+    if (n == 1):
+        numbersList = [1]
+ 
+    else:
+        while (k < n):
+            if (k >= 2):
+                numbersList.append (numbersList[k - 1] + numbersList [k - 2])
+
+            k = k + 1             
+              
+           
+    return numbersList
     pass
 
 if __name__ == '__main__':
