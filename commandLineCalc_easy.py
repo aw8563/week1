@@ -30,9 +30,9 @@ def calculate(s):
     for i in range(0, len(s)):
         check = 0
         if (s[i] == '+' or s[i] == '-' or s[i] == '*' or s[i] == '/' or
-            s[i] == '(' or s[i] == '(' or s[i].isalpha() != True):
+            s[i] == '(' or s[i] == ')' or s[i].isdigit() == True):
             check = 1
-        if check == 0:
+        else:
             break
     if check == 0:
         return None
